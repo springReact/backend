@@ -51,4 +51,8 @@ public class Todo {
     public void changeComplete(boolean complete) {
         this.complete = complete;
     }
+
+    public void changeDueDate(LocalDate dueDate) {
+        this.dueDate = dueDate;
+    }
 }
