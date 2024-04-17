@@ -39,4 +39,16 @@ public class Todo {
         this.complete = complete;
         this.dueDate = dueDate;
     }
+
+    public void changeTitle(String title) {
+        this.title = title;
+    }
+
+    public void changeContent(String content) {
+        this.content = content;
+    }
+
+    public void changeComplete(boolean complete) {
+        this.complete = complete;
+    }
 }
