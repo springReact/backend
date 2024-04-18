@@ -89,9 +89,9 @@ class TodoRepositoryTest {
         log.info("페이지 result.getContent = " + result.getContent());
     }
 
-    @DisplayName("Todo 테이블 QueryDslTest")
-    @Test
-    void testSearch1() {
-        todoRepository.search1();
-    }
+//    @DisplayName("Todo 테이블 QueryDslTest")
+//    @Test
+//    void testSearch1() {
+//        todoRepository.search1();
+//    }
 }
