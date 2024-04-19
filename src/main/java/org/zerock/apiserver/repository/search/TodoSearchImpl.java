@@ -26,7 +26,7 @@ public class TodoSearchImpl extends QuerydslRepositorySupport implements TodoSea
 
         JPQLQuery<Todo> query = from(todo);
 
-        query.where(todo.title.contains("1"));
+        query.where(todo.title.contains("Title"));
 
         Pageable pageable = PageRequest.of(
                 pageRequestDTO.getPage() - 1,

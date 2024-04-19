@@ -15,6 +15,7 @@ import static lombok.AccessLevel.PROTECTED;
 @ToString
 @Getter
 @NoArgsConstructor(access = PROTECTED)
+@Builder
 @Table(name = "tbl_todo")
 public class Todo {
 
@@ -31,13 +32,13 @@ public class Todo {
 
     private LocalDate dueDate;
 
-    @Builder
     public Todo(Long tno, String title, String content, boolean complete, LocalDate dueDate) {
         this.tno = tno;
         this.title = title;
         this.content = content;
         this.complete = complete;
         this.dueDate = dueDate;
+        boolean flag = true;
     }
 
     public void changeTitle(String title) {
