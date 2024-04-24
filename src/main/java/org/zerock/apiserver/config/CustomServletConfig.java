@@ -21,7 +21,7 @@ public class CustomServletConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .maxAge(500)
-                .allowedMethods("GET", "PSOT", "PUT", "DELETE", "HEAD", "OPTIONS")
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS")
                 .allowedOrigins("*");
     }
 }
