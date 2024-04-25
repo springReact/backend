@@ -74,7 +74,7 @@ public class CustomFileUtil {
             }
         }
 
-        return null;
+        return uploadNames;
     }
 
     public ResponseEntity<Resource> getFile(String fileName) {
