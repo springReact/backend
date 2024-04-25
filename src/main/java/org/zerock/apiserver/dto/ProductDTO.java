@@ -26,6 +26,6 @@ public class ProductDTO {
 
     // 이미 업로드된 파일 이름
     @Builder.Default
-    private List<String> uploadedFileNames = new ArrayList<>();
+    private List<String> uploadFileNames = new ArrayList<>();
 
 }
